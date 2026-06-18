@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Automatiza Tu Vida con Hermes Agent | Guía Práctica LATAM</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700;800&family=Libre+Caslon+Text&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton:wght@100..900&family=Manrope:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#e2e2e2",
+                        "surface-container-low": "#1a1c1c",
+                        "secondary-container": "#af8d11",
+                        "on-primary-fixed-variant": "#2f4d3d",
+                        "tertiary": "#ffb4a5",
+                        "primary-fixed": "#c8ebd5",
+                        "error": "#ffb4ab",
+                        "on-primary-container": "#759582",
+                        "primary-container": "#0d2c1e",
+                        "on-tertiary-container": "#ff4e2e",
+                        "outline-variant": "#424844",
+                        "surface-container-high": "#282a2b",
+                        "primary": "#acceb9",
+                        "background": "#121414",
+                        "on-error": "#690005",
+                        "inverse-primary": "#466554",
+                        "on-background": "#e2e2e2",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary": "#650b00",
+                        "surface-container-highest": "#333535",
+                        "surface-dim": "#121414",
+                        "on-secondary-container": "#342800",
+                        "on-primary": "#183627",
+                        "surface-bright": "#38393a",
+                        "on-primary-fixed": "#022113",
+                        "surface-variant": "#333535",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-secondary-fixed-variant": "#574500",
+                        "tertiary-container": "#530700",
+                        "on-tertiary-fixed-variant": "#8e1300",
+                        "surface": "#121414",
+                        "secondary-fixed": "#ffe088",
+                        "on-secondary": "#3c2f00",
+                        "tertiary-fixed": "#ffdad3",
+                        "outline": "#8c928d",
+                        "on-surface-variant": "#c2c8c2",
+                        "on-secondary-fixed": "#241a00",
+                        "on-surface": "#e2e2e2",
+                        "error-container": "#93000a",
+                        "surface-tint": "#acceb9",
+                        "inverse-on-surface": "#2f3131",
+                        "tertiary-fixed-dim": "#ffb4a5",
+                        "secondary": "#e9c349",
+                        "primary-fixed-dim": "#acceb9",
+                        "on-tertiary-fixed": "#3e0400",
+                        "surface-container": "#1e2020",
+                        "surface-container-lowest": "#0c0f0f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "section-gap": "80px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Manrope"],
+                        "subtitle-serif": ["Libre Caslon Text"],
+                        "headline-lg": ["Anton"],
+                        "headline-lg-mobile": ["Anton"],
+                        "body-md": ["Manrope"],
+                        "headline-xl": ["Anton"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "800" }],
+                        "subtitle-serif": ["24px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "500" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #121414; color: #e2e2e2; overflow-x: hidden; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .hero-glow { background: radial-gradient(circle at 50% 50%, rgba(233, 195, 73, 0.15), transparent 70%); }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .benefit-card:hover { border-color: #e9c349; transform: translateY(-4px); }
+        .cta-button { font-family: 'Anton', sans-serif; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 0 #8e1300; }
+        .cta-button:active { transform: translateY(2px); box-shadow: 0 2px 0 #8e1300; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary selection:text-on-secondary">
+<!-- Top Urgency Banner -->
+<div class="w-full bg-secondary py-2 px-4 text-center">
+<p class="font-label-caps text-label-caps text-on-secondary-container uppercase tracking-widest">
+            ¡TRANSFORMA TU VIDA Y TRABAJA DESDE DONDE QUIERAS!
+        </p>
+</div>
+<!-- Navigation Shell -->
+<header class="bg-background sticky top-0 z-50 border-b border-outline-variant shadow-md">
+<div class="flex justify-between items-center px-gutter py-4 w-full max-w-container-max mx-auto">
+<div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tighter">
+                HERMES AGENT
+            </div>
+<nav class="hidden md:flex gap-8">
+<a class="font-label-caps text-label-caps text-secondary border-b-2 border-secondary pb-1" href="#">Beneficios</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Metodología</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Precios</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Testimonios</a>
+</nav>
+<button class="bg-[#ff4e2e] text-white font-label-caps text-label-caps px-6 py-3 rounded-lg cta-button">
+                ¡ACCESO INMEDIATO AL LIBRO
+            </button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center pt-16 md:pt-0 overflow-hidden">
+<div class="absolute inset-0 hero-glow -z-10"></div>
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8 animate-fade-in">
+<div class="inline-block border border-secondary px-4 py-1 rounded-full">
+<span class="font-label-caps text-label-caps text-secondary uppercase">CON HERMES AGENT</span>
+</div>
+<h1 class="font-headline-xl text-5xl md:text-7xl lg:text-[100px] leading-[0.9] text-white uppercase tracking-tight">
+                        AUTOMATIZA <br/>
+<span class="text-secondary">TU VIDA</span> <br/>
+                        DIARIA
+                    </h1>
+<p class="font-subtitle-serif text-subtitle-serif text-primary italic max-w-lg">
+                        Tu asistente IA. Tus reglas. Tu libertad.
+                    </p>
+<div class="grid grid-cols-1 gap-4 max-w-md">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-label-caps text-label-caps text-white">AUTOMATIZACIONES INTELIGENTES</p>
+<p class="font-body-md text-body-md text-on-surface-variant">que trabajan 24/7 por ti</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-label-caps text-label-caps text-white">SKILLS PERSONALIZADAS</p>
+<p class="font-body-md text-body-md text-on-surface-variant">para maximizar tu productividad</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-label-caps text-label-caps text-white">AGENTE IA PROFESIONAL</p>
+<p class="font-body-md text-body-md text-on-surface-variant">que entiende y ejecuta por ti</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<p class="font-label-caps text-label-caps text-white">ADMINISTRACIÓN COMPLETA</p>
+<p class="font-body-md text-body-md text-on-surface-variant">desde cero, paso a paso</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-6 items-center">
+<button class="w-full sm:w-auto bg-[#ff4e2e] text-white font-headline-lg text-2xl px-12 py-5 rounded-lg cta-button uppercase tracking-widest">
+                            ¡LO QUIERO YA!
+                        </button>
+<div class="flex flex-col items-center sm:items-start">
+<div class="flex gap-1 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-xs font-label-caps text-on-surface-variant">+2,500 ALUMNOS SATISFECHOS</p>
+</div>
+</div>
+</div>
+<!-- 3D Mockup Area -->
+<div class="relative flex justify-center items-center">
+<div class="absolute w-[500px] h-[500px] bg-primary opacity-5 rounded-full blur-[100px]"></div>
+<div class="animate-float relative z-10">
+<img alt="Guía Hermes Agent 3D Mockup" class="w-full max-w-[450px] drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtgblW-AUKqARxGFw0yWpc0dFm85DjxNaZprWafj_TuU3Hhx6gZ6dILmj8IIAUYZP405q4Ui5pojOFx8sY5nvOYQKashnGH7Ijh1vBB8epnFsSsUaYTr-P1TfrLq5a5vdT0ZASxH-0V4fZp2yYSWz5wUh47iqhFOix3IwQkM81kILyTGm0DM2cwsl0Xji56uBW1AiPF7mZ9B-1Wch4QR8blbv63H19Uxf1rhYXSdGAftriMuRFivsOvrAcTmzZPJaezVd1sOuQlbrE"/>
+<!-- Floating Badge -->
+<div class="absolute -top-12 -right-12 bg-secondary text-on-secondary rounded-full w-32 h-32 flex flex-col items-center justify-center text-center p-4 transform rotate-12 shadow-xl border-4 border-background">
+<span class="font-label-caps text-[10px]">GUÍA</span>
+<span class="font-headline-lg text-3xl leading-none">100%</span>
+<span class="font-label-caps text-[10px]">PRÁCTICA</span>
+</div>
+<!-- Format Badge -->
+<div class="absolute bottom-12 -right-8 glass-card rounded-xl p-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">cloud_download</span>
+<div>
+<p class="text-[10px] font-label-caps opacity-60">FORMATO</p>
+<p class="font-headline-lg text-lg text-white">PDF</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Band -->
+<div class="w-full bg-primary-container py-6 border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter flex flex-wrap justify-between items-center gap-4 text-primary opacity-80 uppercase font-label-caps text-sm tracking-widest">
+<span>DESCARGA INMEDIATA</span>
+<span class="hidden md:block">|</span>
+<span>CONTENIDO ACTUALIZADO</span>
+<span class="hidden md:block">|</span>
+<span>APLICA HOY, RESULTADOS MAÑANA</span>
+</div>
+</div>
+<!-- Ideal Para Section -->
+<section class="py-section-gap bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h2 class="font-headline-lg text-4xl mb-12 uppercase">LA SOLUCIÓN <span class="text-secondary">IDEAL PARA:</span></h2>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+<div class="flex flex-col items-center gap-4 group">
+<div class="w-20 h-20 rounded-full glass-card flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-all duration-300">
+<span class="material-symbols-outlined text-4xl">rocket_launch</span>
+</div>
+<p class="font-label-caps text-xs">EMPRENDEDORES</p>
+</div>
+<div class="flex flex-col items-center gap-4 group">
+<div class="w-20 h-20 rounded-full glass-card flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-all duration-300">
+<span class="material-symbols-outlined text-4xl">work</span>
+</div>
+<p class="font-label-caps text-xs">FREELANCERS</p>
+</div>
+<div class="flex flex-col items-center gap-4 group">
+<div class="w-20 h-20 rounded-full glass-card flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-all duration-300">
+<span class="material-symbols-outlined text-4xl">video_call</span>
+</div>
+<p class="font-label-caps text-xs">CREADORES</p>
+</div>
+<div class="flex flex-col items-center gap-4 group">
+<div class="w-20 h-20 rounded-full glass-card flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-all duration-300">
+<span class="material-symbols-outlined text-4xl">groups</span>
+</div>
+<p class="font-label-caps text-xs">COACHES</p>
+</div>
+<div class="flex flex-col items-center gap-4 group">
+<div class="w-20 h-20 rounded-full glass-card flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-all duration-300">
+<span class="material-symbols-outlined text-4xl">trending_up</span>
+</div>
+<p class="font-label-caps text-xs">MARKETERS</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-section-gap relative overflow-hidden">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-secondary opacity-5 blur-[120px] -z-10"></div>
+<div class="max-w-4xl mx-auto px-gutter">
+<div class="glass-card rounded-[2rem] p-8 md:p-16 text-center relative overflow-hidden border border-secondary/20">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<p class="font-label-caps text-secondary tracking-[0.3em] mb-4 uppercase">OFERTA DE LANZAMIENTO</p>
+<h3 class="font-headline-lg text-5xl md:text-6xl text-white mb-8">TODO POR SOLO</h3>
+<div class="inline-flex items-center justify-center bg-secondary/10 rounded-full px-12 py-8 border-2 border-secondary mb-8">
+<span class="font-headline-xl text-secondary text-8xl md:text-[120px]">$9.99</span>
+</div>
+<div class="space-y-2 mb-12">
+<p class="font-headline-lg text-2xl text-white">PAGO ÚNICO</p>
+<p class="font-body-md text-on-surface-variant">Acceso de por vida a todas las actualizaciones futuras</p>
+</div>
+<button class="w-full bg-[#ff4e2e] text-white font-headline-lg text-3xl py-6 rounded-2xl cta-button mb-8 shadow-2xl">
+                        DESCARGAR AHORA
+                    </button>
+<div class="flex items-center justify-center gap-8 text-on-surface-variant font-label-caps text-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+<span>COMPRA SEGURA</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">workspace_premium</span>
+<span>7 DÍAS DE GARANTÍA</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant py-section-gap px-margin-mobile">
+<div class="max-w-container-max mx-auto flex flex-col items-center gap-base text-center">
+<div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-secondary mb-4">
+                HERMES AGENT
+            </div>
+<div class="flex items-center gap-4 mb-8">
+<span class="font-label-caps text-sm">DISPONIBLE EN:</span>
+<div class="flex items-center gap-2 bg-[#121414] px-4 py-2 rounded-lg border border-outline-variant">
+<span class="material-symbols-outlined text-[#ff4e2e]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-headline-lg text-xl tracking-tight">hotmart</span>
+</div>
+</div>
+<nav class="flex flex-wrap justify-center gap-8 mb-12">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary underline transition-all" href="#">Privacidad</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary underline transition-all" href="#">Términos</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary underline transition-all" href="#">Soporte</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary underline transition-all" href="#">Afiliados</a>
+</nav>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                © 2024 Hermes Agent - Todos los derechos reservados. Automatiza tu libertad.
+            </p>
+</div>
+</footer>
+<script>
+        // Micro-interaction for hover effects on glass cards
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body></html>
