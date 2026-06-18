@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://automatiza-tu-vida-con-hermes.vercel.app/sitemap.xml
