@@ -455,7 +455,7 @@
         }
     </script>
 <style>
-        body { font-family: 'Manrope', sans-serif; background-color: #121414; color: #e2e2e2; overflow-x: hidden; }
+        body { font-family: 'Manrope', sans-serif; background-color: #121414; color: #e2e2e2; overflow-x: hidden; scroll-behavior: smooth; scroll-padding-top: 80px; }
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
         .hero-glow { background: radial-gradient(circle at 50% 50%, rgba(233, 195, 73, 0.15), transparent 70%); }
         .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
@@ -488,7 +488,7 @@
 <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#precio">Precio</a>
 <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#faq">FAQ</a>
 </nav>
-<a href="https://pay.hotmart.com/W106387860W" target="_blank" rel="noopener" class="bg-[#ff4e2e] text-white font-label-caps text-label-caps px-6 py-3 rounded-lg cta-button no-underline">
+<a href="#precio" class="bg-[#ff4e2e] text-white font-label-caps text-label-caps px-6 py-3 rounded-lg cta-button no-underline">
                 ACCESO INMEDIATO
             </a>
 </div>
@@ -541,7 +541,7 @@
 </div>
 </div>
 <div class="flex flex-col sm:flex-row gap-6 items-center">
-<a href="https://pay.hotmart.com/W106387860W" target="_blank" rel="noopener" class="w-full sm:w-auto bg-[#ff4e2e] text-white font-headline-lg text-2xl px-12 py-5 rounded-lg cta-button uppercase tracking-widest no-underline text-center">
+<a href="#precio" class="w-full sm:w-auto bg-[#ff4e2e] text-white font-headline-lg text-2xl px-12 py-5 rounded-lg cta-button uppercase tracking-widest no-underline text-center">
                             ¡LO QUIERO YA!
                         </a>
 <div class="flex flex-col items-center sm:items-start">
@@ -711,7 +711,7 @@
 </div>
 <p class="text-center text-on-surface-variant mt-8 text-sm">Más 4 apéndices: proveedores compatibles, comandos de referencia, troubleshooting y recursos.</p>
 <div class="text-center mt-8">
-<a href="https://pay.hotmart.com/W106387860W" target="_blank" rel="noopener" class="inline-block bg-secondary text-on-secondary font-headline-lg text-xl px-10 py-4 rounded-lg cta-button no-underline uppercase">
+<a href="#precio" class="inline-block bg-secondary text-on-secondary font-headline-lg text-xl px-10 py-4 rounded-lg cta-button no-underline uppercase">
 Quiero todo esto por $9.99
 </a>
 </div>
@@ -887,17 +887,17 @@ Quiero todo esto por $9.99
 <p class="font-label-caps text-secondary tracking-[0.3em] mb-4 uppercase">OFERTA DE LANZAMIENTO LATAM 2026</p>
 <h3 class="font-headline-lg text-5xl md:text-6xl text-white mb-4">LLEVA TU VIDA <span class="text-secondary">AL SIGUIENTE NIVEL</span></h3>
 
-<!-- Countdown -->
+<!-- Countdown (session-based, resets on new tab/visit) -->
 <div id="countdown" class="mb-6">
-<p class="font-label-caps text-xs text-on-surface-variant uppercase tracking-wider mb-2">Oferta termina en</p>
+<p class="font-label-caps text-xs text-on-surface-variant uppercase tracking-wider mb-2">Tu sesión de oferta termina en</p>
 <div class="inline-flex items-center justify-center gap-2 bg-[#ff4e2e]/10 border border-[#ff4e2e]/40 rounded-lg px-6 py-3">
-<span class="font-headline-lg text-3xl md:text-4xl text-white"><span id="cd-hours">23</span><span class="text-base text-on-surface-variant">h</span></span>
+<span class="font-headline-lg text-3xl md:text-4xl text-white"><span id="cd-hours">00</span><span class="text-base text-on-surface-variant">h</span></span>
 <span class="text-white text-2xl">:</span>
-<span class="font-headline-lg text-3xl md:text-4xl text-white"><span id="cd-minutes">59</span><span class="text-base text-on-surface-variant">m</span></span>
+<span class="font-headline-lg text-3xl md:text-4xl text-white"><span id="cd-minutes">15</span><span class="text-base text-on-surface-variant">m</span></span>
 <span class="text-white text-2xl">:</span>
-<span class="font-headline-lg text-3xl md:text-4xl text-white"><span id="cd-seconds">59</span><span class="text-base text-on-surface-variant">s</span></span>
+<span class="font-headline-lg text-3xl md:text-4xl text-white"><span id="cd-seconds">00</span><span class="text-base text-on-surface-variant">s</span></span>
 </div>
-<p class="text-xs text-on-surface-variant mt-2">Después, precio original <span class="line-through text-white">$99</span></p>
+<p class="text-xs text-on-surface-variant mt-2">Si cerrás esta pestaña o volvés más tarde, el tiempo se reinicia. La oferta sigue disponible en <a href="https://pay.hotmart.com/W106387860W" class="text-secondary underline">este link</a>.</p>
 </div>
 
 <!-- Price anchoring -->
@@ -1003,9 +1003,9 @@ Quiero todo esto por $9.99
 <div class="glass-card rounded-xl p-6 border-l-4 border-l-secondary">
 <div class="flex items-center gap-3 mb-3">
 <span class="material-symbols-outlined text-secondary text-2xl" style="font-variation-settings: 'FILL' 1;">history_edu</span>
-<h3 class="font-label-caps text-white uppercase">Lo que no enseñan en YouTube</h3>
+<h3 class="font-label-caps text-white uppercase">Enfoque en producción, no en tutoriales</h3>
 </div>
-<p class="text-on-surface-variant text-sm">Hay 200 tutoriales de "cómo usar ChatGPT" en YouTube. Este libro te enseña a construir tu propia infraestructura de IA. Esa es la diferencia entre usar la herramienta y ser dueño de la herramienta.</p>
+<p class="text-on-surface-variant text-sm">La mayoría de tutoriales en YouTube te enseñan a usar un servicio de IA. Este libro te enseña a construir tu propia infraestructura de IA desde cero, con código real y configs probadas.</p>
 </div>
 </div>
 </div>
@@ -1081,8 +1081,8 @@ Quiero todo esto por $9.99
 <p class="text-xs text-on-surface-variant">59 páginas, multi-provider, multi-canal. Pago único, acceso de por vida.</p>
 </div>
 <p class="md:hidden text-white font-bold text-sm">Tu agente IA 24/7, desde $9.99</p>
-<a href="https://pay.hotmart.com/W106387860W" target="_blank" rel="noopener" class="bg-[#ff4e2e] text-white font-headline-lg text-lg md:text-xl px-6 md:px-8 py-3 rounded-lg cta-button no-underline uppercase whitespace-nowrap">
-        Obtener PDF
+<a href="#precio" class="bg-[#ff4e2e] text-white font-headline-lg text-lg md:text-xl px-6 md:px-8 py-3 rounded-lg cta-button no-underline uppercase whitespace-nowrap">
+        Ver precio y comprar
     </a>
 </div>
 </div>
@@ -1139,7 +1139,7 @@ Quiero todo esto por $9.99
 <div class="bg-[#0c0f0f] border-2 border-dashed border-secondary rounded-lg p-4 mb-4 text-center">
 <p class="font-headline-lg text-3xl text-secondary tracking-widest">INSIA5</p>
 </div>
-<p class="text-xs text-on-surface-variant mb-4">Aplicá el código en el checkout de Hotmart antes de pagar. Válido por las próximas 24 horas.</p>
+<p class="text-xs text-on-surface-variant mb-4">Aplicá el código en el checkout de Hotmart antes de pagar. Válido durante esta sesión.</p>
 <a href="https://pay.hotmart.com/W106387860W" target="_blank" rel="noopener" class="block w-full bg-[#ff4e2e] text-white font-headline-lg text-xl py-4 rounded-lg cta-button uppercase text-center no-underline">
         Aplicar descuento y comprar
     </a>
@@ -1148,24 +1148,10 @@ Quiero todo esto por $9.99
 </div>
 
 <!-- ============================================ -->
-<!-- SOCIAL PROOF WIDGET (F4)                      -->
+<!-- SOCIAL PROOF WIDGET: REMOVED                  -->
+<!-- Simulated buyer notifications removed per     -->
+<!-- user request — only legal tactics remaining.  -->
 <!-- ============================================ -->
-<div id="social-proof" class="fixed bottom-4 left-4 z-50 hidden max-w-xs bg-[#1a1c1c] border border-outline-variant rounded-xl p-3 shadow-2xl">
-<div class="flex items-start gap-3">
-<div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-on-primary text-xl" style="font-variation-settings: 'FILL' 1;">person</span>
-</div>
-<div class="flex-1 min-w-0">
-<p id="sp-name" class="text-white font-bold text-sm truncate">Alguien de México</p>
-<p id="sp-action" class="text-on-surface-variant text-xs truncate">acaba de comprar el libro</p>
-<p id="sp-time" class="text-on-surface-variant text-[10px] mt-1">hace 2 minutos</p>
-</div>
-<button id="sp-close" class="text-on-surface-variant hover:text-white text-lg leading-none flex-shrink-0" aria-label="Cerrar">&times;</button>
-</div>
-<div class="mt-2 pt-2 border-t border-outline-variant">
-<p class="text-[9px] text-on-surface-variant text-center uppercase tracking-wider">DEMO · Actividad simulada con fines ilustrativos</p>
-</div>
-</div>
 
 <script>
         // ============================================
@@ -1174,18 +1160,21 @@ Quiero todo esto por $9.99
         // ============================================
 
         // ============================================
-        // F5. COUNTDOWN TIMER (24h from first visit)
+        // F5. SESSION-BASED COUNTDOWN TIMER (resets on new session)
         // ============================================
+        // Honest framing: this measures the user's session on the page,
+        // not a real deadline on the offer. Resets when they close the
+        // tab, open a new tab, or come back later.
         (function() {
-            const STORAGE_KEY = 'hermes_countdown_start';
-            const DURATION_MS = 24 * 60 * 60 * 1000;
+            const STORAGE_KEY = 'hermes_session_start';
+            const SESSION_DURATION_MS = 15 * 60 * 1000; // 15 minutes per session
             const now = Date.now();
-            let start = parseInt(localStorage.getItem(STORAGE_KEY) || '0', 10);
-            if (!start || isNaN(start) || (now - start) > DURATION_MS) {
+            let start = parseInt(sessionStorage.getItem(STORAGE_KEY) || '0', 10);
+            if (!start || isNaN(start) || (now - start) > SESSION_DURATION_MS) {
                 start = now;
-                localStorage.setItem(STORAGE_KEY, String(start));
+                sessionStorage.setItem(STORAGE_KEY, String(start));
             }
-            const end = start + DURATION_MS;
+            const end = start + SESSION_DURATION_MS;
             const hEl = document.getElementById('cd-hours');
             const mEl = document.getElementById('cd-minutes');
             const sEl = document.getElementById('cd-seconds');
@@ -1199,8 +1188,10 @@ Quiero todo esto por $9.99
                     mEl.textContent = '00';
                     sEl.textContent = '00';
                     if (expiredEl) {
-                        expiredEl.querySelector('p:first-child').textContent = 'Oferta finalizada';
-                        expiredEl.querySelector('p:nth-child(2)').textContent = 'Precio actual: $9.99';
+                        const titleP = expiredEl.querySelector('p:first-child');
+                        const subP = expiredEl.querySelector('p:nth-child(2)');
+                        if (titleP) titleP.textContent = 'Tu sesión terminó';
+                        if (subP) subP.innerHTML = 'La oferta sigue disponible en <a href="https://pay.hotmart.com/W106387860W" class="text-secondary underline">este link</a>.';
                     }
                     return;
                 }
@@ -1235,10 +1226,10 @@ Quiero todo esto por $9.99
             }
             function dismiss() {
                 hidePopup();
-                localStorage.setItem(STORAGE_KEY, String(Date.now()));
+                sessionStorage.setItem(STORAGE_KEY, String(Date.now()));
             }
             function shouldShow() {
-                const last = parseInt(localStorage.getItem(STORAGE_KEY) || '0', 10);
+                const last = parseInt(sessionStorage.getItem(STORAGE_KEY) || '0', 10);
                 if (!last) return true;
                 const elapsed = Date.now() - last;
                 return elapsed > COOLDOWN_DAYS * 24 * 60 * 60 * 1000;
@@ -1278,70 +1269,12 @@ Quiero todo esto por $9.99
         })();
 
         // ============================================
-        // F4. SOCIAL PROOF WIDGET (simulated)
-        // ============================================
-        (function() {
-            // DEMO DATA: nombres y ubicaciones son ilustrativos, no representan
-            // personas reales ni compras reales. Ver terminos.html#11.
-            const DEMO_DATA = [
-                { name: 'Carlos M.', city: 'Bogotá, CO', flag: 'CO', mins: 2 },
-                { name: 'María G.', city: 'Ciudad de México, MX', flag: 'MX', mins: 5 },
-                { name: 'Juan P.', city: 'Buenos Aires, AR', flag: 'AR', mins: 8 },
-                { name: 'Andrea L.', city: 'Santiago, CL', flag: 'CL', mins: 12 },
-                { name: 'Diego R.', city: 'Lima, PE', flag: 'PE', mins: 15 },
-                { name: 'Sofía V.', city: 'Medellín, CO', flag: 'CO', mins: 18 },
-                { name: 'Pablo H.', city: 'Montevideo, UY', flag: 'UY', mins: 22 },
-                { name: 'Lucía T.', city: 'Quito, EC', flag: 'EC', mins: 25 },
-                { name: 'Roberto S.', city: 'São Paulo, BR', flag: 'BR', mins: 28 },
-                { name: 'Carolina N.', city: 'Caracas, VE', flag: 'VE', mins: 31 },
-                { name: 'Fernando O.', city: 'Guadalajara, MX', flag: 'MX', mins: 35 },
-                { name: 'Valentina C.', city: 'Rosario, AR', flag: 'AR', mins: 38 }
-            ];
-            const ACTIONS = [
-                'acaba de comprar el libro',
-                'compró el libro hace instantes',
-                'ya está leyendo el primer capítulo',
-                'descargó el PDF hace un momento',
-                'se sumó a los lectores de LATAM'
-            ];
-
-            const STORAGE_KEY = 'hermes_sp_dismissed';
-            if (localStorage.getItem(STORAGE_KEY) === '1') return;
-
-            const widget = document.getElementById('social-proof');
-            const nameEl = document.getElementById('sp-name');
-            const actionEl = document.getElementById('sp-action');
-            const timeEl = document.getElementById('sp-time');
-            const closeBtn = document.getElementById('sp-close');
-            if (!widget || !nameEl || !actionEl || !timeEl || !closeBtn) return;
-
-            let timer = null;
-            function showOne() {
-                const d = DEMO_DATA[Math.floor(Math.random() * DEMO_DATA.length)];
-                const a = ACTIONS[Math.floor(Math.random() * ACTIONS.length)];
-                nameEl.textContent = d.name + ' de ' + d.city;
-                actionEl.textContent = a;
-                timeEl.textContent = 'hace ' + d.mins + ' minutos';
-                widget.classList.remove('hidden');
-                if (timer) clearTimeout(timer);
-                timer = setTimeout(function() {
-                    widget.classList.add('hidden');
-                    scheduleNext();
-                }, 5000);
-            }
-            function scheduleNext() {
-                const delay = (10 + Math.random() * 15) * 1000; // 10-25s
-                setTimeout(showOne, delay);
-            }
-            closeBtn.addEventListener('click', function() {
-                widget.classList.add('hidden');
-                localStorage.setItem(STORAGE_KEY, '1');
-                if (timer) clearTimeout(timer);
-            });
-
-            // First show after 12s
-            setTimeout(showOne, 12000);
-        })();
+        // F4. SOCIAL PROOF: REMOVED                    -->
+        // Was: simulated LATAM names widget with     -->
+        // DEMO badge. Removed for legal/ethical      -->
+        // reasons. Replace with real testimonials     -->
+        // once product has real buyers.              -->
+        // ============================================ -->
 
         // Micro-interaction for hover effects on glass cards
         document.querySelectorAll('.glass-card').forEach(card => {
