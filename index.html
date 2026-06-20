@@ -1127,23 +1127,23 @@ Quiero todo esto por $9.99
 </footer>
 
 <!-- ============================================ -->
-<!-- EXIT-INTENT POPUP (F2)                       -->
+<!-- EXIT-INTENT POPUP (F2) — recovery only, no    -->
+<!-- coupon, anchors to #precio                    -->
 <!-- ============================================ -->
 <div id="exit-popup" class="fixed inset-0 z-[60] hidden items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
 <div class="bg-[#1a1c1c] border-2 border-secondary rounded-2xl max-w-md w-full p-8 relative">
 <button id="exit-close" class="absolute top-3 right-3 text-on-surface-variant hover:text-white text-2xl leading-none" aria-label="Cerrar">&times;</button>
 <p class="font-label-caps text-secondary tracking-wider text-xs uppercase mb-2">Antes de irte...</p>
-<h3 class="font-headline-lg text-3xl text-white mb-2 uppercase">Te llevo el libro por <span class="text-secondary">$7.49</span></h3>
-<p class="text-on-surface-variant text-sm mb-1 line-through">$9.99 precio normal</p>
-<p class="text-on-surface-variant text-sm mb-4">Usá este código al pagar para obtener 25% extra de descuento:</p>
-<div class="bg-[#0c0f0f] border-2 border-dashed border-secondary rounded-lg p-4 mb-4 text-center">
-<p class="font-headline-lg text-3xl text-secondary tracking-widest">INSIA5</p>
-</div>
-<p class="text-xs text-on-surface-variant mb-4">Aplicá el código en el checkout de Hotmart antes de pagar. Válido durante esta sesión.</p>
-<a href="https://pay.hotmart.com/W106387860W" target="_blank" rel="noopener" class="block w-full bg-[#ff4e2e] text-white font-headline-lg text-xl py-4 rounded-lg cta-button uppercase text-center no-underline">
-        Aplicar descuento y comprar
+<h3 class="font-headline-lg text-3xl text-white mb-4 uppercase">¿Ya viste todo lo que incluye el libro?</h3>
+<ul class="text-sm text-on-surface-variant space-y-2 mb-6">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings: 'FILL' 1;">check_circle</span>59 páginas técnicas, sin relleno</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings: 'FILL' 1;">check_circle</span>Multi-provider, multi-canal, en español</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings: 'FILL' 1;">check_circle</span>Acceso de por vida + actualizaciones</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings: 'FILL' 1;">check_circle</span>7 días de garantía sin preguntas</li>
+</ul>
+<a href="#precio" id="exit-cta" class="block w-full bg-[#ff4e2e] text-white font-headline-lg text-xl py-4 rounded-lg cta-button uppercase text-center no-underline">
+        Ver precio completo
     </a>
-<p class="text-[10px] text-on-surface-variant text-center mt-3 uppercase tracking-wider">Recordá: 7 días de garantía · Acceso de por vida</p>
 </div>
 </div>
 
@@ -1239,6 +1239,9 @@ Quiero todo esto por $9.99
             popup.addEventListener('click', function(e) {
                 if (e.target === popup) dismiss();
             });
+            // CTA in popup also dismisses it (anchor scrolls to #precio)
+            const exitCta = document.getElementById('exit-cta');
+            if (exitCta) exitCta.addEventListener('click', dismiss);
 
             if (!shouldShow()) return;
 
